@@ -1,0 +1,67 @@
+/*
+Syntax error: Undefined variable: "$planet".
+        on line 6 of animation/animation-planets.scss
+
+1: .anim-planets {
+2: 
+3: 	width:185px;
+4: 	height:185px;
+5: 
+6: 	background:$planet center no-repeat;
+7: 	@include background-image-retina($planet2x, 145px, 145px);
+8: 	
+9: 	position:relative;
+10: 
+11: 
+
+Backtrace:
+animation/animation-planets.scss:6
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/variable.rb:49:in `_perform'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/node.rb:40:in `perform'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/list.rb:70:in `block in _perform'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/list.rb:70:in `map'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/list.rb:70:in `_perform'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/script/node.rb:40:in `perform'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/engine.rb:315:in `_render'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/engine.rb:262:in `render'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
+/Users/jamiewilson/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.10/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$planet\".\A         on line 6 of animation/animation-planets.scss\A \A 1: .anim-planets {\A 2: \A 3: 	width:185px;\A 4: 	height:185px;\A 5: \A 6: 	background:$planet center no-repeat;\A 7: 	@include background-image-retina($planet2x, 145px, 145px);\A 8: 	\A 9: 	position:relative;\A 10: \A 11: "; }

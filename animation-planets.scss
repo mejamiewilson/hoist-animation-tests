@@ -1,0 +1,160 @@
+.anim-planets {
+
+	width:185px;
+	height:185px;
+
+	background:$planet center no-repeat;
+	@include background-image-retina($planet2x, 145px, 145px);
+	
+	position:relative;
+
+
+	.anim-planets-piece-1, .anim-planets-piece-2, .anim-planets-piece-3, .anim-planets-piece-4 {
+
+		position:absolute;
+		-webkit-animation-iteration-count:infinite;
+	    -webkit-animation-timing-function:linear;
+
+	    span {
+	    	display:block;
+	    	position:absolute;
+	    	-webkit-animation-iteration-count:infinite;
+	    	-webkit-animation-timing-function:linear;
+
+	    }
+
+	}
+
+	.anim-planets-piece-1 {
+
+		-webkit-transform:rotate(90deg);
+
+		top:13px;
+		left:13px;
+		
+		width: 158px;
+	    height: 158px;
+	    -webkit-border-radius: 79px;
+	    -moz-border-radius: 79px;
+	    border-radius: 79px;
+	    
+	    -webkit-animation-duration:30s;
+	    -webkit-animation-name:orbit-1;
+
+	    span {
+	    	width:17px;
+	    	height:16px;
+	    	background:$planet-1;
+			@include background-image-retina($planet-12x, 17px, 16px);
+			top:20px;
+			left:20px;
+			-webkit-animation-duration:30s;
+			-webkit-animation-name:reverse-orbit-1;
+	    }
+
+	}
+	
+	.anim-planets-piece-2 {
+
+		top:8px;
+		left:8px;
+		
+		width: 168px;
+	    height: 168px;
+	    -webkit-border-radius: 84px;
+	    -moz-border-radius: 84px;
+	    border-radius: 84px;
+	    
+	    -webkit-animation-duration:20s;
+	    -webkit-animation-name:orbit-2;
+
+		span {
+	    	width:24px;
+	    	height:23px;
+	    	background:$planet-2;
+			@include background-image-retina($planet-22x, 24px, 23px);
+			top:21px;
+			left:21px;
+			-webkit-animation-duration:20s;
+			-webkit-animation-name:reverse-orbit-2;
+	    }
+
+
+	}
+	
+	.anim-planets-piece-3 {
+
+		top:0px;
+		left:0px;
+		
+		width: 184px;
+	    height: 184px;
+	    -webkit-border-radius: 92px;
+	    -moz-border-radius: 92px;
+	    border-radius: 92px;
+	    
+	    -webkit-animation-duration:50s;
+	    -webkit-animation-name:orbit-3;
+
+	    span {
+			
+			width:41px;
+	    	height:23px;
+	    	
+			background:$planet-3;
+			@include background-image-retina($planet-32x, 41px, 23px);
+
+			top:23px;
+			left:23px;
+
+			-webkit-animation-duration:50s;
+			-webkit-animation-name:reverse-orbit-3;
+
+	    }
+
+	}
+	
+	.anim-planets-piece-4 {
+
+		top:13px;
+		left:13px;
+		
+		width: 160px;
+	    height: 160px;
+	    -webkit-border-radius: 80px;
+	    -moz-border-radius: 80px;
+	    border-radius: 80px;
+	    
+	    -webkit-animation-duration:40s;
+	    -webkit-animation-name:orbit-4;
+
+	    span {
+			
+			width:17px;
+	    	height:17px;
+	    	
+			background:$planet-4;
+			@include background-image-retina($planet-42x, 17px, 17px);
+
+			top:20px;
+			left:20px;
+
+			-webkit-animation-duration:40s;
+			-webkit-animation-name:reverse-orbit-4;
+
+	    }
+
+	}
+}
+
+@-webkit-keyframes orbit-1 { from { -webkit-transform:rotate(45deg) } to { -webkit-transform:rotate(405deg) } }
+@-webkit-keyframes reverse-orbit-1 { from { -webkit-transform:rotate(504deg) } to { -webkit-transform:rotate(45deg) } }
+
+@-webkit-keyframes orbit-2 { from { -webkit-transform:rotate(495deg) } to { -webkit-transform:rotate(135deg) } }
+@-webkit-keyframes reverse-orbit-2 { from { -webkit-transform:rotate(135deg) } to { -webkit-transform:rotate(495deg) } }
+
+@-webkit-keyframes orbit-3 { from { -webkit-transform:rotate(225deg) } to { -webkit-transform:rotate(585deg) } }
+@-webkit-keyframes reverse-orbit-3 { from { -webkit-transform:rotate(495deg) } to { -webkit-transform:rotate(135deg) } }
+
+@-webkit-keyframes orbit-4 { from { -webkit-transform:rotate(675deg) } to { -webkit-transform:rotate(315deg) } }
+@-webkit-keyframes reverse-orbit-4 { from { -webkit-transform:rotate(315deg) } to { -webkit-transform:rotate(675deg) } }

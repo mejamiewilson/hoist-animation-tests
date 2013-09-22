@@ -1,0 +1,251 @@
+.anim-globe {
+	
+	display:block;
+	width:185px;
+	height:185px;
+	position:relative;
+
+	.anim-globe-piece-1, .anim-globe-piece-2, .anim-globe-piece-3, .anim-globe-piece-4, .anim-globe-piece-5 {
+		position:absolute;
+		span {
+			display:block;	
+		}
+	} 
+
+	.anim-globe-piece-1 {
+
+        -webkit-animation-duration: 5s; 
+        -webkit-animation-iteration-count: infinite; 
+        -webkit-animation-timing-function: linear;
+        
+        -webkit-animation-name: pathRotateRev-zindex;
+
+        .orbit { 
+        
+        	position:absolute;
+
+            -webkit-transform-style: preserve-3d; 
+            -webkit-transform: rotateX(66deg) rotateY(30deg);
+    		
+    		top:19px;
+    		left:19px;
+			
+        }
+                    
+        .path { 
+        	
+        	width:153px; 
+        	height:153px; 
+        	border-radius:153px;
+        	position:relative; 
+        	
+            -webkit-transform-style: preserve-3d; 
+            -webkit-animation-name: pathRotate; 
+            -webkit-animation-duration: 5s; 
+            -webkit-animation-iteration-count: infinite; 
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: pathRotateRev;
+     	}
+        
+      
+        
+        .electron { 
+        	
+
+        	position: absolute; 
+        
+        	background:#32424f; 
+
+        	-webkit-animation-duration: 5s; 
+        	-webkit-animation-iteration-count: infinite; 
+        	-webkit-animation-timing-function: linear;  
+        	-webkit-animation-name: electronFix-upright;
+        	
+			width:24px;
+			height:23px;
+
+			background:$globe-1;
+			@include background-image-retina($globe-12x, 24px, 23px);
+
+
+    	}
+
+	}
+
+	
+    .anim-globe-piece-2 {
+
+        -webkit-animation-duration: 5s; 
+        -webkit-animation-iteration-count: infinite; 
+        -webkit-animation-timing-function: linear;
+        
+        -webkit-animation-name: pathRotateRev-zindex-2;
+
+        .orbit { 
+
+        	position:absolute;
+        
+            -webkit-transform-style: preserve-3d; 
+            -webkit-transform: rotateX(0deg) rotateY(62deg);
+    		
+    		top:16px;
+    		left:14px;
+			
+        }
+                    
+        .path { 
+        	
+        	border:1px solid blue;	
+
+        	width:150px; 
+        	height:150px; 
+        	border-radius:150px;
+        	position:relative; 
+        	
+            -webkit-transform-style: preserve-3d; 
+            -webkit-animation-name: pathRotate; 
+            -webkit-animation-duration: 5s; 
+            -webkit-animation-iteration-count: infinite; 
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: pathRotateRev-2;
+     	}
+        
+      
+        
+        .electron { 
+        	
+			border:1px solid blue;
+
+        	position: absolute; 
+        
+        	background:#32424f; 
+
+        	-webkit-animation-duration: 5s; 
+        	-webkit-animation-iteration-count: infinite; 
+        	-webkit-animation-timing-function: linear;  
+        	-webkit-animation-name: electronFix-upright-2;
+        	
+			width:24px;
+			height:23px;
+
+			background:$globe-2;
+			@include background-image-retina($globe-22x, 24px, 23px);
+
+
+    	}
+
+	}
+
+	.anim-globe-piece-3 {
+
+		display:none;
+
+        -webkit-animation-duration: 15s; 
+        -webkit-animation-iteration-count: infinite; 
+        -webkit-animation-timing-function: linear;
+        
+        -webkit-animation-name: pathRotateRev-zindex;
+
+        .orbit { 
+        
+            -webkit-transform-style: preserve-3d; 
+            -webkit-transform: rotateX(80deg) rotateY(20deg);
+    		
+    		t0p:10px;
+    		left:10px;
+			
+        }
+                    
+        .path { 
+        	
+        	border:1px solid blue;	
+
+        	width:150px; 
+        	height:150px;
+        	border-radius:150px;        	 
+        	position:relative; 
+        	
+            -webkit-transform-style: preserve-3d; 
+            -webkit-animation-name: pathRotate; 
+            -webkit-animation-duration: 15s; 
+            -webkit-animation-iteration-count: infinite; 
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-name: pathRotateRev;
+     	}
+        
+      
+        
+        .electron { 
+        	
+			border:1px solid blue;
+
+        	position: absolute; 
+        
+        	background:#32424f; 
+
+        	-webkit-animation-duration: 15s; 
+        	-webkit-animation-iteration-count: infinite; 
+        	-webkit-animation-timing-function: linear;  
+        	-webkit-animation-name: electronFix-upright;
+        	
+			width:24px;
+			height:23px;
+
+			background:$globe-3;
+			@include background-image-retina($globe-32x, 24px, 23px);
+
+
+    	}
+
+	}
+
+
+
+
+	.anim-globe-piece-4 {
+
+		z-index:2;
+
+		width:160px;
+		height:153px;
+
+		background:$globe-4;
+		@include background-image-retina($globe-42x, 160px, 153px);
+
+		top:16px;
+		left:15px;
+
+		
+	}
+	
+	.anim-globe-piece-5 {
+
+		z-index:0;
+
+		width:160px;
+		height:153px;
+
+		background:$globe-5;
+		@include background-image-retina($globe-52x, 160px, 153px);
+
+		top:16px;
+		left:15px;
+
+		
+	}
+
+
+}
+
+
+@-webkit-keyframes electronFix-upright { from { -webkit-transform: rotateX(90deg) rotateY(-360deg) rotateZ(210deg);  } to { -webkit-transform: rotateX(90deg) rotateY(0deg) rotateZ(210deg);  } }
+@-webkit-keyframes pathRotateRev-zindex {   0% { z-index:0; } 30% { z-index: 4; }
+  100% { z-index: 0; } }
+@-webkit-keyframes pathRotateRev { from { -webkit-transform: rotateZ(0deg);} to { -webkit-transform: rotateZ(-360deg); } }
+
+
+@-webkit-keyframes electronFix-upright-2 { from { -webkit-transform: rotateX(0deg) rotateY(45deg) rotateZ(0deg);  } to { -webkit-transform: rotateX(0deg) rotateY(225deg) rotateZ(0deg);  } }
+@-webkit-keyframes pathRotateRev-zindex-2 {   0% { z-index:0; } 60% { z-index: 4; }
+  100% { z-index: 0; } }
+@-webkit-keyframes pathRotateRev-2 { from { -webkit-transform: rotateZ(0deg);} to { -webkit-transform: rotateZ(-360deg); } }
+
